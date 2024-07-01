@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.toggle {
+    display: none;
+}
+.container {
+    display: flex;
+}
+/*sidebar*/
+.container .sidebar {
+    width: 17%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(245, 245, 245, 0.643);
+    color: rgb(148, 147, 147);
+}
+.sidebar h2 {
+    color: #000000c7;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 35px 0;
+}
+.sidebar .main, .other {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main h5, p , .other h5, p {
+    margin: 10px 0;
+    display: flex;
+}
+.sidebar p {
+    font-size: 65%;
+}
+.sidebar img {
+    margin-right: 20px;
+    margin-left: 0;
+}
+img {
+    margin-left: 20px;
+}
+/*dashboard*/
+.container .dashboard {
+    width: 83%;
+    padding: 20px 50px;
+}
+.dashboard header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(156, 152, 152, 0.217);
+    padding-bottom: 10px;
+}
+.dashboard .search {
+    border: 0.1px solid rgb(221, 219, 219);
+    background-color: rgba(245, 245, 245, 0.562);
+    color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    height: 30px;
+    justify-content: space-between;
+}
+.dashboard .profile {
+    display: flex;
+}
+.dashboard .profile img, h5 {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 15px;
+}
+main {
+    margin-top: 25px;
+}
+main h3 {
+    color: rgb(6, 6, 47);
+9}
+.main {
+    display: flex;
+    margin: 10px 0;
+}
+
+/*stats & announcements*/
+.main .stats_announcement {
+    width: 60%;
+}
+.stats .top, .bottom {
+    display: flex;
+    margin-bottom: 15px;
+}
+.stats .top, .bottom h4, .ann, .upcoming {
+    color: rgb(6, 6, 47);
+}
+.stats .top .elt1 {
+    padding: 10px;
+    width: 33%;
+    border-radius: 8px;
+}
+.top .elt1bg1 {
+    background-color: #fc86b354;
+}
+.top .elt1bg2 {
+    margin-left: 10px;
+    background-color: #b0edff48;
+}
+.top .elt1bg3 {
+    margin-left: 10px;
+    background-color: #ff8fcd2a;
+}
+.top  .elt1bg1 p {
+    color: rgb(247, 68, 18);
+}
+.top  .elt1bg2 p {
+    color: rgb(18, 167, 247);
+}
+.top  .elt1bg3 p {
+    color: rgba(247, 18, 190, 0.872);
+}
+.stats .bottom .elt2 {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    border-radius: 8px;
+}
+.bottom .elt2bg  {
+    margin-left: 10px;
+}
+.elt2 .left , .right  {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.elt2 .right {
+    align-items: flex-end;
+}
+.top span {
+    color: rgb(6, 6, 47);
+    font-weight: 700;
+    font-size: 32px;
+}
+.bottom .left span {
+    color: rgb(6, 6, 47);
+    font-weight: 700;
+    font-size: 38px;
+}
+.bottom .right span {
+    font-size: 80%;
+    width: 80%;
+    text-align: right;
+    background-color: rgba(255, 93, 53, 0.241);
+}
+.bottom .elt2 p {
+    font-size: 90%;
+}
+.stats_announcement .ann {
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    border-radius: 8px;
+    padding: 10px 10px 0;
+}
+.ann .title {
+    display: flex;
+    justify-content: space-between;
+}
+.ann .title span {
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+    border: 1px solid rgba(128, 128, 128, 0.178);
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    font-size: 80%;
+}
+.ann .content {
+    background-color: #e5e5e55b;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border: 1px solid rgba(128, 128, 128, 0.178);
+    margin: 15px 0 5px;
+    border-radius: 8px;
+}
+.content .text {
+    width: 70%;
+}
+.content .text span {
+    font-size: 80%;
+    color: rgb(128, 128, 128);
+}
+.ann .content .icon {
+    display: flex;
+    align-items: center;
+ }
+
+
+/*Recently activity*/
+.dashboard .activity {
+    margin-left: 20px;
+}
+.activity .rec_act {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgb(6, 6, 47);
+}
+.rec_act .tit{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(31, 31, 69);
+}
+.rec_act .content {
+    padding: 15px 15px 5px;
+}
+.rec_act .content span, .upcoming span {
+    font-size: 80%;
+    color: rgba(240, 248, 255, 0.624);
+}
+.rec_act .content h3 {
+    margin-top: 5px;
+}
+.rec_act .content p {
+    color: rgba(255, 255, 255, 0.783);
+}
+.rec_act .last {
+    margin: 0;
+    padding: 0 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.783);
+}
+.last button {
+    padding: 12px;
+    color: rgba(255, 255, 255, 0.783);
+    background-color: rgb(255, 89, 89);
+    border-radius: 4px;
+}
+.activity .upcoming {
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    border-radius: 8px;
+    padding: 10px 10px 0;
+}
+.ann .content p {
+    color: rgba(0, 0, 0, 0.926);
+}
+@media (max-width:834px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 15px;
+    }
+    .container .sidebar {
+        display: none;
+    }
+    .container .dashboard {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .container .dashboard header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(156, 152, 152, 0.217);
+    }
+    .toggle {
+        display: block;
+        display:flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 25px;
+    }
+    .dashboard .search {
+        display: none;
+    }
+    main {
+    margin: 0;
+    }
+    .main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.main .stats_announcement {
+    width: 100%;
+}
+.stats_announcement .ann {
+    margin-bottom: 15px;
+}
+.stats .top, .bottom {
+    display: flex;
+    flex-direction: column;
+}
+.stats .top .elt1 {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+.stats .bottom .elt2 {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+}
+.bottom .elt2bg  {
+    margin: 0;
+}
+.dashboard .activity {
+    margin: 0;
+}
+.rec_act .content span, .upcoming span {
+    font-size: 100%;
+}
+.rec_act .last {
+    display: flex;
+    flex-direction: column;
+}
+}
